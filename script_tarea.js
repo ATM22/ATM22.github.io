@@ -69,11 +69,12 @@ tabla.innerHTML = "<tr><th>Empleado</th><th>Nombre</th><th>Edad</th><th>DPI</th>
     x += 1;
   }
   document.getElementById("tabla-empleados").style.display = "block";
+  let prom = parseFloat(sumaSalarios / x);
   }
   function totales(){
   mostrarEmpleado()
   let totales = "La suma de los salarios totales es de: Q" + sumaSalarios + "\n" +
-    "EL promedio de salarios totales es de: Q" + parseFloat(sumaSalarios / x) + "\n" +
+    "EL promedio de salarios totales es de: Q" + prom + "\n" +
     "La suma de horas extras es: " + sumaHoras;
   alert (totales);
   }
