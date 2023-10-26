@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EMPLEADOS</title>
+        <style>
+        th, td {
+        text-align: center;
+        padding: 10px;
+        border: solid 1.5px #041749;
+        }
+
+        h1,p{
+        text-align: center;
+        }
+
+        form{
+        text-align: center;
+        }
+        label{
+         min-width: 200px; 
+        }
+          
+        .tabla{
+        width: 60%;
+        margin: 10px auto;
+        }
+        </style>
+</head>
+<body>
+        <header>
+	<h1>EMPLEADOS</h1>
+        </header>
+	<p>Ingrese los siguiente datos del empleado:</p>
+	<form>
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre"><br><br>
+		<label for="edad">Edad:</label>
+		<input type="text" id="edad"><br><br>
+                <label for="dpi">DPI:</label>
+		<input type="text" id="dpi"><br><br>
+		<label for="salario">Salario mensual: Q</label>
+		<input type="text" id="salario"><br><br>
+		<label for="horas">Horas Extras:</label>
+		<input type="text" id="horas"><br><br>
+		<input type="button" value="Guardar" onclick="guardarEmpleado()">
+                <input type="button" value="Agregar Empleado" onclick="mostrarEmpleado()">
+                <input type="button" value="Mostrar Totales" onclick="totales()">
+	</form>
+	<br>
+        <div class="tabla">
+        <table id="tabla-empleados" >
+           <tr>
+           <th>Empleado</th>
+           <th>Nombre</th>
+           <th>Edad</th>
+           <th>DPI</th>
+           <th>Salario mensual</th>
+           <th>Salario total</th>
+           <th>Horas extras</th>
+           <th>Boleto de ornato</th>
+           </tr>
+        </table>
+        </div>
+        <script src="script_tarea.js"></script>
+</body>
+</html>
