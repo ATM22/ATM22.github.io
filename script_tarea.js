@@ -73,7 +73,7 @@ tabla.innerHTML = "<tr><th>Empleado</th><th>Nombre</th><th>Edad</th><th>DPI</th>
   function totales(){
   mostrarEmpleado()
   let totales = "La suma de los salarios totales es de: Q" + sumaSalarios + "\n" +
-    "EL promedio de salarios totales es de: Q" + (sumaSalarios / x) + "\n" +
+    "EL promedio de salarios totales es de: Q" + parseFloat(sumaSalarios / x) + "\n" +
     "La suma de horas extras es: " + sumaHoras;
   alert (totales);
   }
