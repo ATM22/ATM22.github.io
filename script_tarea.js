@@ -64,7 +64,7 @@ tabla.innerHTML = "<tr><th>Empleado</th><th>Nombre</th><th>Edad</th><th>DPI</th>
     totalCell.innerHTML = "Q" + total;
     horasCell.innerHTML = empleados[i].horas;
     boletoCell.innerHTML = empleados[i].boleto;
-    sumaSalarios += total;
+    sumaSalarios += parseFloat(total);
     sumaHoras += parseInt(empleados[i].horas);
     x += 1;
   }
