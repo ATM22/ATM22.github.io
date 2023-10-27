@@ -20,7 +20,8 @@ document.getElementById("tabla-empleados").style.display = "none";
 		}
                 
                 function calcularBoletodeOrnato () {
-                       for (let i = 0; i < empleados.length; i++) {
+			for (let i = 0; i < empleados.length; i++) {
+				empleados[i].salario = parseFloat(empleados[i].salario;
                                 if (empleados[i].salario <= 500.00) {
                                     empleados[i].boleto = "Monto de Q4.00. Con multa Q8.00 ";
                                 } else if (empleados[i].salario >= 500.01 && empleados[i].salario <= 1000.00) {
