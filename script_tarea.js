@@ -42,7 +42,6 @@ document.getElementById("tabla-empleados").style.display = "none";
     
 
 		function mostrarEmpleado() {
-			calcularBoletodeOrnato ();
                        let tabla = document.getElementById("tabla-empleados");
 tabla.innerHTML = "<tr><th>Empleado</th><th>Nombre</th><th>Edad</th><th>DPI</th><th>Salario mensual</th><th>Salario total</th><th>Horas extras</th><th>Boleto de ornato</th></tr>";
   sumaHoras = 0;
