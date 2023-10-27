@@ -11,7 +11,6 @@ document.getElementById("tabla-empleados").style.display = "none";
 			empleado.salario = document.getElementById("salario").value;
 			empleado.horas = document.getElementById("horas").value;
 			empleados.push(empleado);
-                        calcularBoletodeOrnato();
 			document.getElementById("nombre").value = "";
 			document.getElementById("edad").value = "";
                         document.getElementById("dpi").value = "";
@@ -20,6 +19,7 @@ document.getElementById("tabla-empleados").style.display = "none";
 		}
                 
                 function calcularBoletodeOrnato () {
+			guardarEmpleado();
 			for (let i = 0; i < empleados.length; i++) {
 				empleados[i].salario = parseFloat(empleados[i].salario;
                                 if (empleados[i].salario <= 500.00) {
@@ -42,6 +42,7 @@ document.getElementById("tabla-empleados").style.display = "none";
     
 
 		function mostrarEmpleado() {
+			calcularBoletodeOrnato ();
                        let tabla = document.getElementById("tabla-empleados");
 tabla.innerHTML = "<tr><th>Empleado</th><th>Nombre</th><th>Edad</th><th>DPI</th><th>Salario mensual</th><th>Salario total</th><th>Horas extras</th><th>Boleto de ornato</th></tr>";
   sumaHoras = 0;
